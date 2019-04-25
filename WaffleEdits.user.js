@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Waffles
 // @namespace    https://github.com/geisterfurz007
-// @version      0.1
+// @version      0.2
 // @description  Make your last message to waffles!
 // @author       geisterfurz007
 // @match        https://chat.stackoverflow.com/rooms/*
