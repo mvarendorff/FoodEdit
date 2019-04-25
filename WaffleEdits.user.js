@@ -20,14 +20,15 @@
 	}
 
     const buttonsContainer = $("#chat-buttons");
-    const waffleButton = $("<a>").attr("id", "waffle-button").addClass("button").text("Foodify last message").css("position: relative");
+    const waffleButton = $("<a>");
+    waffleButton.attr("id", "waffle-button").addClass("button").text("Foodify last message").css("position: relative");
 
     buttonsContainer.append(waffleButton);
     
     waffleButton.click(editLastMessage);
 
     function editLastMessage() {
-        const ingredientsJson = "https://www.randomlists.com/data/ingredients.json";
+        const ingredientsJson = "https://raw.githubusercontent.com/geisterfurz007/FoodEdit/master/ingredients.json";
         
         $.getJSON(ingredientsJson, function(json) {
             const data = json.data;
