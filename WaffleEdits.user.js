@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Waffles
 // @namespace    https://github.com/geisterfurz007
-// @version      0.2
+// @version      0.3
 // @description  Make your last message to waffles!
 // @author       geisterfurz007
 // @match        https://chat.stackoverflow.com/rooms/*
@@ -21,7 +21,10 @@
 
     const buttonsContainer = $("#chat-buttons");
     const waffleButton = $("<a>");
-    waffleButton.attr("id", "waffle-button").addClass("button").text("Foodify last message").css("position: relative");
+    waffleButton.attr("id", "waffle-button").addClass("button").text("Foodify last message").css({
+        "position": "relative",
+        "background-color": "#C60030"
+    });
 
     buttonsContainer.append(waffleButton);
     
