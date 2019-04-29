@@ -12,12 +12,12 @@
     'use strict';
 
     if (typeof GM !== 'object') {
-		GM = {};
-	}
+        GM = {};
+    }
 
-	if (typeof GM_xmlhttpRequest === 'function' && !GM.xmlHttpRequest) {
-		GM.xmlHttpRequest = GM_xmlhttpRequest;
-	}
+    if (typeof GM_xmlhttpRequest === 'function' && !GM.xmlHttpRequest) {
+        GM.xmlHttpRequest = GM_xmlhttpRequest;
+    }
 
     const buttonsContainer = $("#chat-buttons");
     const waffleButton = $("<a>");
