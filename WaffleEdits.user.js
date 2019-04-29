@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Waffles
 // @namespace    https://github.com/geisterfurz007
-// @version      0.3
+// @version      0.4
 // @description  Make your last message to waffles!
 // @author       geisterfurz007
 // @match        https://chat.stackoverflow.com/rooms/*
@@ -38,7 +38,7 @@
             data.push("waffles"); //Has to be in there!
             const index = Math.floor(Math.random() * data.length);
             const ingredient = data[index];
-            const cleanedIngredient = ingredient.toLowerCase().replace(" ", "-");
+            const cleanedIngredient = ingredient.toLowerCase().replace(/ /g, "-");
             const fkey = $("#fkey").attr("value");
             const messageElement = $(".monologue.mine").last().find(".message:last");
             const messageId = messageElement.attr("id").split("-")[1];
