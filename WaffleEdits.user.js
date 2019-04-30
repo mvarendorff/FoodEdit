@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Waffles
 // @namespace    https://github.com/geisterfurz007
-// @version      0.4
+// @version      0.5
 // @description  Make your last message to waffles!
 // @author       geisterfurz007
 // @match        https://chat.stackoverflow.com/rooms/*
@@ -33,8 +33,7 @@
     function editLastMessage() {
         const ingredientsJson = "https://raw.githubusercontent.com/geisterfurz007/FoodEdit/master/ingredients.json";
         
-        $.getJSON(ingredientsJson, function(json) {
-            const data = json.data;
+        $.getJSON(ingredientsJson, function(data) {
             data.push("waffles"); //Has to be in there!
             const index = Math.floor(Math.random() * data.length);
             const ingredient = data[index];
