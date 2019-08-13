@@ -21,3 +21,7 @@ Oh right! You have to use it somehow, don't you... Nothing simpler as that. Your
 ![This is how it should look like](https://i.stack.imgur.com/KhHG6.png "This is how it should look like")
 
 Probably not as dark in the back but just as button.
+
+## WHAT?!
+
+Oh... You are asking why there is something horrible like pineapple-pizza or icecream-bread in there? I got [peer pressured](https://chat.stackoverflow.com/transcript/message/47029030#47029030) to merging that PR, I AM SORRY!!!
